@@ -1,0 +1,16 @@
+
+enableTargetDebug = 1;
+enableDebugConsole[] = {
+    "76561197962051582"     // Brostrom.A
+};
+
+class Extended_PreInit_EventHandlers {
+    imls_preInit = "0 spawn compile preprocessFileLineNumbers 'imls\CBA_preInit.sqf'";
+};
+class Extended_PostInit_EventHandlers {
+    imls_postInit = "0 spawn compile preprocessFileLineNumbers 'imls\CBA_postInit.sqf'";
+};
+
+class CfgFunctions {
+    #include "imls\CfgFunctions.hpp"
+};
